@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Fun with Calculator!</title>
+  </head>
+  <body>
+    <div class="calcHolder">
+      <div class="answerBox">
+      </div>
+      <div class="numButtonsOne">
+        <button id="1" onclick="numToString(this.id)" type="button" name="numOne">1</button>
+        <button id="2" onclick="numToString(this.id)" type="button" name="numTwo">2</button>
+        <button id="3" onclick="numToString(this.id)" type="button" name="numThree">3</button>
+        <button id="4" onclick="numToString(this.id)" type="button" name="numFour">4</button>
+        <button id="5" onclick="numToString(this.id)" type="button" name="numFive">5</button>
+      </div>
+      <div class="numButtonsTwo">
+        <button id="6" onclick="numToString(this.id)" type="button" name="numSix">6</button>
+        <button id="7" onclick="numToString(this.id)" type="button" name="numSeven">7</button>
+        <button id="8" onclick="numToString(this.id)" type="button" name="numEight">8</button>
+        <button id="9" onclick="numToString(this.id)" type="button" name="numNine">9</button>
+        <button id="0" onclick="numToString(this.id)" type="button" name="numZero">0</button>
+      </div>
+      <div class="numButtonsThree">
+        <button id="." onclick="numToString(this.id)" type="button" name="numDecimal">.</button>
+        <button id="-" onclick="numToString(this.id)" type="button" name="numNeg">(-)</button>
+      </div>
+      <div class ="operatorButtons">
+        <button id="+" onclick="operToString(this.id)" type="button" name="add">+</button>
+        <button id="−" onclick="operToString(this.id)" type="button" name="subtract">-</button>
+        <button id="*" onclick="operToString(this.id)" type="button" name="multiply">*</button>
+        <button id="/" onclick="operToString(this.id)" type="button" name="divide">/</button>
+        <button id="%" onclick="operToString(this.id)" type="button" name="remainder">%</button>
+      </div>
+      <div class="heavyButtons">
+        <button id="equalButton" onclick="equalButton()" type="button" name="equals">=</button>
+        <button id="clearButton" onclick="window.location.reload()" type="button" name="clear">A/C</button>
+      </div>
+    </div>
+    <script src="./public/bundle.js"></script>
+  </body>
+</html>
